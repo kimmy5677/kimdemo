@@ -102,7 +102,7 @@ const H2Styled = styled.h2`
     color:${props => props.variant==='light' ? "white": "black" };
     line-height:48.41px;
     margin-bottom:10px;
-    margin-top:10px;
+    margin-top:0px;
     text-align:${props => props.align==='left' ? "left": "center" };
 
     @media ${props => props.theme.breakpoints.mobile} {

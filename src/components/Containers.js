@@ -91,8 +91,6 @@ const RowWrapStyled = styled.div`
     @media ${props => props.theme.breakpoints.mobile} {
     width:90%;
     flex-direction:column;
-    margin-right:auto;
-    margin-left:auto;
   }
 
   @media ${props => props.theme.breakpoints.tablet} {

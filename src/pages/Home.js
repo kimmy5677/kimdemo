@@ -4,6 +4,7 @@ import {MiddleWrap, RowWrap, Maindiv, Divider, DivWithBackground} from "../compo
 import {Banner} from "../components/Banner"
 
 import {Buttons} from "../components/Buttons"
+import {SectorList,ScrollerDiv} from "../components/SectorListing"
 import {Image} from "../components/images"
 import {ReviewCard} from "../components/ReviewCard"
 import {H1,H2,H3,P,Accent,ListItem} from "../components/Text"
@@ -39,6 +40,16 @@ function Home() {
             <P variant="dark">Crypto has evolved into distinct sectors: DeFi, Gaming, NFTs, Bitcoin, Stablecoins, DAOs and more. Research brings you protocol and sector specialists who guide you through each area so you can build tailored investment strategies for each.</P>
           </MiddleWrap>
         </Maindiv>
+
+
+        <div style={{height:'250px',position:'relative',overflow:'hidden'}}>
+        <ScrollerDiv>
+            <SectorList direction="right" sectorslist = {["NFTs","Layer1s","DeFi Applications","Layer 2s","Bridging","NFTs","Layer1s","DeFi Applications","Layer 2s","Bridging"]}/>
+            <SectorList direction="left" sectorslist = {["Tokenomics","Stablecoins","Governance Updates","Staking","Options & Derivatives","Tokenomics","Stablecoins","Governance Updates","Staking","Options & Derivatives"]}/>
+            <SectorList direction="right" sectorslist = {["Tokenomics","Stablecoins","Governance Updates","Staking","Options & Derivatives","Tokenomics","Stablecoins","Governance Updates","Staking","Options & Derivatives"]}/>
+        </ScrollerDiv>
+        </div>
+
 
 
         <Divider/>
