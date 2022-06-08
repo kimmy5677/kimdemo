@@ -27,4 +27,7 @@ const StyledBanner = styled.div`
     justify-content:space-between;
     flex-wrap:wrap;
     align-content:center;
+
+
+    box-shadow: 4px 4px 10px #888888;
 `

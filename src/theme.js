@@ -6,17 +6,18 @@ const theme = {
       nav:"14px",
       buttons:"14px",
       buttons2:"16px",
-      accent:"14px"
+      accent:"14px",
+      accent2:"16px"
     },
     h1sizes:
     {
        desktop:"50px",
-       mobile:"38px"
+       mobile:"35px"
     },
     h2sizes:
     {
        desktop:"40px",
-       mobile:"30px"
+       mobile:"26px"
     },
     h3sizes:
     {
@@ -30,13 +31,13 @@ const theme = {
     colors: {
       purple:"#5538CD",
       purple2:"#3F22B4",
-      lightpurple:"#D7CDFF",
+      lightpurple:"#f5f3ff",
       black1:"black",
       black2:"#120B2B",
     },
     breakpoints: {
-      small: "only screen and (max-width: 830px)", //mobile
-      medium: "only screen and (min-width: 831px) and (max-width: 1185px)", //tablet 768px 740px
+      mobile: "only screen and (max-width: 830px)", //mobile
+      tablet: "only screen and (min-width: 831px) and (max-width: 1185px)", //tablet 768px 740px
       large: "only screen and (min-width: 1186px)", //desktop 1024px
     },
   };

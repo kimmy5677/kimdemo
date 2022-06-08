@@ -14,6 +14,8 @@ const StyledButton = styled.a`
     color:${props => props.type==='clear' ? "white": props.theme.colors.purple };
     border:1px solid white;
     padding: 12px 31px;
+    min-width:150px;
+    text-align:center;
     border-radius:5px;
     font-family:${props=>props.theme.fonts.body};
     font-weight:600;
