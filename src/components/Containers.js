@@ -125,13 +125,13 @@ export const Maindiv = styled.div`
   }
 `
 export const Divider = styled.div`
-  height: 2px;
+  height: 1.5px;
   background-color: #e8eaed;
   width:90%;
   margin-left:auto;
   margin-right:auto;
-  margin-top:50px;
-  margin-bottom:50px;
+  margin-top:90px;
+  margin-bottom:90px;
   @media ${props => props.theme.breakpoints.mobile} {
     margin-top:30px;
   margin-bottom:30px;

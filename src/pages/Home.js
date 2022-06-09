@@ -8,6 +8,7 @@ import {SectorList,ScrollerDiv} from "../components/SectorListing"
 import {Image} from "../components/images"
 import {ReviewCard} from "../components/ReviewCard"
 import {H1,H2,H3,P,Accent,ListItem} from "../components/Text"
+import {Accordion} from "../components/Accordion"
 
 import Bg from "../images/Group3166.png"
 import PurpleUI from "../images/Group3933.png"
@@ -21,7 +22,7 @@ function Home() {
         <Banner backgroundimageurl={Bg}>
           <MiddleWrap width="800px">
             <H1 variant="light">Get unlimited access to the <br/> most powerful platform.</H1>
-            <P variant="light">Research, data, governance, tokenomics, and models. Now, all in one place.</P>
+            <P variant="light" style={{paddingTop:"10px",paddingBottom:"10px",}}>Research, data, governance, tokenomics, and models. Now, all in one place.</P>
             <RowWrap style={{paddingTop:"20px"}}>
 
               <Buttons margin="10px" >Explore the Product</Buttons>
@@ -96,6 +97,59 @@ function Home() {
 
 
       <Maindiv>
+        <H2 variant="dark">Frequently Asked Questions</H2>
+        <MiddleWrap width="800px">
+        <Accordion listitems={[
+        {
+          title:"What is Research?",
+          answer:"Research is the most powerful research platform in crypto. It brings research, data, tokenomics, governance, models and more into place."
+        },
+        {
+          title:"Who is  Research for?",
+          answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod diam eu massa pellentesque feugiat. Duis vitae rhoncus nisl. Nullam pharetra eros elit, nec dictum velit malesuada et."
+        },
+        {
+          title:"What’s included in my membership?",
+          answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod diam eu massa pellentesque feugiat. Duis vitae rhoncus nisl. Nullam pharetra eros elit, nec dictum velit malesuada et."
+        },
+        {
+          title:"Pricing?",
+          answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod diam eu massa pellentesque feugiat. Duis vitae rhoncus nisl. Nullam pharetra eros elit, nec dictum velit malesuada et."
+        },
+        {
+          title:"Can I pay for my subscription in crypto?",
+          answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod diam eu massa pellentesque feugiat. Duis vitae rhoncus nisl. Nullam pharetra eros elit, nec dictum velit malesuada et."
+        },
+        {
+          title:"Do you provide student or academic discounts?",
+          answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod diam eu massa pellentesque feugiat. Duis vitae rhoncus nisl. Nullam pharetra eros elit, nec dictum velit malesuada et."
+        },
+        {
+          title:"What is your cancellation and refund policy?",
+          answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod diam eu massa pellentesque feugiat. Duis vitae rhoncus nisl. Nullam pharetra eros elit, nec dictum velit malesuada et."
+        },
+        {
+          title:"Do you have a free trial?",
+          answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod diam eu massa pellentesque feugiat. Duis vitae rhoncus nisl. Nullam pharetra eros elit, nec dictum velit malesuada et."
+        },
+        {
+          title:"Can I share my account with others?",
+          answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod diam eu massa pellentesque feugiat. Duis vitae rhoncus nisl. Nullam pharetra eros elit, nec dictum velit malesuada et."
+        },
+        {
+          title:"Can I see sample reports before subscribing?",
+          answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod diam eu massa pellentesque feugiat. Duis vitae rhoncus nisl. Nullam pharetra eros elit, nec dictum velit malesuada et."
+        }
+        ]}/>
+        </MiddleWrap>
+      
+      </Maindiv>
+
+      
+      <Divider/>
+
+
+      <Maindiv>
         <Accent>What You Get </Accent>
         <MiddleWrap width="800px">
           <H2 variant="dark">Unlock instant access to a whole new world of research.</H2>
@@ -123,6 +177,10 @@ function Home() {
        </DivWithBackground>
 
       </Maindiv>
+
+
+      
+
 
       </Layout>
 

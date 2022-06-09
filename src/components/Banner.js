@@ -1,12 +1,27 @@
 import styled from '@emotion/styled'
 import {Navbar} from "../components/Navbar"
+import {Burger} from "../components/BurgerMenu"
+import React, { useState, useEffect } from 'react';
+
 
 export const Banner = ({backgroundimageurl,children}) =>
 {
+     const [isMobileSize, setisMobileSize] = useState(
+        window.matchMedia("(max-width: 932px)").matches
+      )
+    
+      useEffect(() => {
+        window
+        .matchMedia("(max-width: 932px)")
+        .addEventListener('change', e => setisMobileSize( e.matches ));
+      }, []);
+
     return(
         <div>
         <StyledBanner backgroundimageurl={backgroundimageurl}>
-            <Navbar/>
+
+            {isMobileSize && (<Burger/>)}
+            {!isMobileSize && (<Navbar/>)}       
             {children}
         </StyledBanner>
         </div>
@@ -27,7 +42,13 @@ const StyledBanner = styled.div`
     justify-content:space-between;
     flex-wrap:wrap;
     align-content:center;
-
-
     box-shadow: 4px 4px 10px #888888;
+    @media ${props => props.theme.breakpoints.mobile} {
+        min-height:500px;
+    }
+
+  @media ${props => props.theme.breakpoints.tablet} {
+        min-height:500px;
+    }
+
 `

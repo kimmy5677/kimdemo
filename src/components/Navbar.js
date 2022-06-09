@@ -25,7 +25,7 @@ const NavbarContainer = styled.div`
 `
 
 
-const NavLink = styled.a`
+export const NavLink = styled.a`
 font-size:${props => props.theme.miscsizes.nav};
 font-family:${props => props.theme.fonts.body};
 font-weight:600px;

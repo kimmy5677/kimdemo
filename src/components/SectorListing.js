@@ -22,10 +22,12 @@ export const SectorList = ({sectorslist,style,direction}) =>
 }
 
 const StyledParagraph = styled.p`
+    margin-top:10px;
+    margin-bottom:10px;
     background:${props => props.theme.colors.black2 };
     color:white;
     border:1px solid white;
-    padding: 12px 31px;
+    padding: 15px 31px;
     min-width:150px;
     width:230px;
     text-align:center;

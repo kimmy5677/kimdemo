@@ -4,24 +4,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons'
 
 
-export const H1 = ({children,variant}) =>
+export const H1 = ({children,variant,style}) =>
 {
     return(
-        <H1Styled variant={variant}>{children}</H1Styled>
+        <H1Styled variant={variant} style={style}>{children}</H1Styled>
     )
 }
 
-export const H2 = ({children,variant,align}) =>
+export const H2 = ({children,variant,align,style}) =>
 {
     return(
-        <H2Styled variant={variant} align={align}>{children}</H2Styled>
+        <H2Styled variant={variant} style={style} align={align}>{children}</H2Styled>
     )
 }
 
-export const H3 = ({children,variant,size}) =>
+export const H3 = ({children,variant,size,style}) =>
 {
     return(
-        <H3Styled variant={variant} size={size}>{children}</H3Styled>
+        <H3Styled variant={variant} style={style} size={size}>{children}</H3Styled>
     )
 }
 
@@ -124,6 +124,10 @@ const H3Styled = styled.h3`
     color:${props => props.variant==='light' ? "white": "black" };
     line-height:36px;
     text-align:left;
+    padding-bottom:0px;
+    margin-bottom: 0px; 
+    padding-bottom:0px;
+    margin-bottom: 0px; ;
 
     @media ${props => props.theme.breakpoints.mobile} {
         font-size:${props => props.theme.h3sizes.mobile};
