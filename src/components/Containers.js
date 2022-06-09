@@ -1,20 +1,20 @@
 //For all containers
 import styled from '@emotion/styled'
 
-export const MiddleWrap = ({children,width,align}) =>
+export const MiddleWrap = ({children,width,align,style}) =>
 {
     return(
-        <MiddleWrapStyled thewidth={width} align={align}>
+        <MiddleWrapStyled thewidth={width} align={align} style={style}>
         {children}
         </MiddleWrapStyled>
     )
 
 }
 
-export const RowWrap = ({children,width,RowOnMobile,align}) =>
+export const RowWrap = ({children,width,align,style}) =>
 {
     return(
-        <RowWrapStyled thewidth={width} mobileRow={RowOnMobile} align={align}>
+        <RowWrapStyled thewidth={width} align={align} style={style}> 
         {children}
         </RowWrapStyled>
     )
@@ -38,6 +38,7 @@ export const DivWithBackground = styled.div`
     flex-wrap:wrap;
     width:60%;
     justify-content:flex-start;
+    align-content:center;
     align-items:center;
     @media ${props => props.theme.breakpoints.mobile} {
     width:90%;
@@ -64,6 +65,7 @@ const MiddleWrapStyled = styled.div`
     width:${props => props.thewidth};
     padding-right:${props => props.align==='left' ? "30px": "0px" };
 
+    padding-left:0px;
     padding-bottom:20px;
 
     @media ${props => props.theme.breakpoints.mobile} {
@@ -131,7 +133,7 @@ export const Divider = styled.div`
   margin-left:auto;
   margin-right:auto;
   margin-top:90px;
-  margin-bottom:90px;
+  margin-bottom:70px;
   @media ${props => props.theme.breakpoints.mobile} {
     margin-top:30px;
   margin-bottom:30px;

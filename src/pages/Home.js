@@ -9,6 +9,7 @@ import {Image} from "../components/images"
 import {ReviewCard} from "../components/ReviewCard"
 import {H1,H2,H3,P,Accent,ListItem} from "../components/Text"
 import {Accordion} from "../components/Accordion"
+import {Form} from "../components/ContactForm"
 
 import Bg from "../images/Group3166.png"
 import PurpleUI from "../images/Group3933.png"
@@ -24,9 +25,8 @@ function Home() {
             <H1 variant="light">Get unlimited access to the <br/> most powerful platform.</H1>
             <P variant="light" style={{paddingTop:"10px",paddingBottom:"10px",}}>Research, data, governance, tokenomics, and models. Now, all in one place.</P>
             <RowWrap style={{paddingTop:"20px"}}>
-
-              <Buttons margin="10px" >Explore the Product</Buttons>
-              <Buttons type="clear" margin="10px">Get in Touch</Buttons>
+              <Buttons type="white" style={{margin:"10px"}} >Explore the Product</Buttons>
+              <Buttons type="clear"  style={{margin:"10px"}}>Get in Touch</Buttons>
             </RowWrap>
           </MiddleWrap>
           <div>
@@ -161,24 +161,32 @@ function Home() {
           <MiddleWrap width="800px">
           <RowWrap>         
             <H3 size="42px" variant="light">$900</H3>
-            <div>
+            <div style={{paddingTop:"40px"}}>
               <P variant="light" align="left" style={{fontSize:"14px",margin:"0px 0px 0px 10px"}}>per seat/quaterly</P>  
               <P variant="light" align="left" style={{fontSize:"14px",margin:"-5px 0px 0px 10px",opacity:"70%"}}>$2,500 per seat/annually</P>  
             </div>
           </RowWrap>
-
           </MiddleWrap>
 
-          <RowWrap align="top">
+          <RowWrap align="top" style={{marginTop:"20px",marginBottom:"20px"}}>
             <ListItem variant="light" listitems={["Daily Morning Briefing","Private Discord","Discounted Events","Asset Profiles","Research Portal","Fund Overviews "]}/>
             <ListItem variant="light" listitems={["Monthly Analyst Calls","Corporate Access Calls","DAO Commissioned Research","Directory","Raw Data Feed "]} />
           </RowWrap>
-
+          <Buttons type="white" style={{margin:"40px 10px 10px 10px", fontSize:"16px", width:"40%"}} >Subscribe</Buttons>
        </DivWithBackground>
-
       </Maindiv>
 
 
+      <Divider/>
+
+
+      <Maindiv>
+        <MiddleWrap width="800px">
+          <H2 variant="dark" style={{paddingBottom:"50px"}}>Contact</H2>
+          <Form/>
+         
+       </MiddleWrap>
+      </Maindiv>
       
 
 

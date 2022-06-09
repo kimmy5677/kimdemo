@@ -1,10 +1,14 @@
 //All buttons including transparent button, white button, purple button. 
 import styled from '@emotion/styled'
 
-export const Buttons = ({children,type,href,margin}) =>
+
+
+
+
+export const Buttons = ({children,type,href,style}) =>
 {
     return(
-        <StyledButton type={type} href={href} margin={margin}>{children}</StyledButton>
+        <StyledButton type={type} href={href} style={style}>{children}</StyledButton>
     )
 
 }
@@ -21,7 +25,6 @@ const StyledButton = styled.a`
     font-weight:600;
     font-size:${props=>props.theme.miscsizes.buttons};
     transition: all 0.3s linear;
-    margin:${props=>props.margin};
     &:hover{
         background:${props => props.type==='clear' ? "white":"none" };
         color:${props => props.type==='clear' ?  props.theme.colors.purple : "white" };   
