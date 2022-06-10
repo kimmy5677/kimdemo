@@ -113,13 +113,13 @@ const H2Styled = styled.h2`
 
     @media ${props => props.theme.breakpoints.mobile} {
         font-size:${props => props.theme.h1sizes.mobile};
-        line-height:34px;
+        line-height:37px;
         text-align:center;
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
         font-size:${props => props.theme.h1sizes.mobile};
-        line-height:34px;
+        line-height:37px;
         text-align:center;
   }
 `
