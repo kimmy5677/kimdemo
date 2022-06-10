@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react';
-
-
+import Minus from "../images/minus-circle.svg"
+import Plus from "../images/plus-circle.svg"
 
 
 export const Accordion = ({listitems}) =>
@@ -40,8 +40,7 @@ const AccordionSingle = ({title,answer}) =>
         <AccordionItem>
         <AccordionTitle onClick={()=>setIsActive(!isActive)}>
             <H3 style={{textAlign:'left'}}>{title}</H3>
-            {isActive ? <FontAwesomeIcon icon={faMinus} style={{color:'#5538CD',paddingTop:'26px'}}/> :
-            <FontAwesomeIcon icon={faPlus} style={{color:'#5538CD',paddingTop:'26px'}}/>  }
+            {isActive ? <img src={Minus} style={{paddingTop:"18px"}}/> : <img src={Plus} style={{paddingTop:"18px"}}/>  }
         </AccordionTitle>
         <AccordionContent>
             {isActive ?  <P style={{textAlign:'left'}} align="left">{answer}</P> : ""  }
@@ -77,5 +76,13 @@ const AccordionTitle = styled.div`
 
 `
 const AccordionContent = styled.div`
+    width:80%;
+    @media ${props => props.theme.breakpoints.mobile} {
+    width:100%;
+  }
 
+  @media ${props => props.theme.breakpoints.tablet} {
+    width:100%;
+
+  }
 `

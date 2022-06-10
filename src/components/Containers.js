@@ -133,7 +133,7 @@ export const Divider = styled.div`
   width:90%;
   margin-left:auto;
   margin-right:auto;
-  margin-top:90px;
+  margin-top:100px;
   margin-bottom:70px;
   @media ${props => props.theme.breakpoints.mobile} {
     margin-top:30px;

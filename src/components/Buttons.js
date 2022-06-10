@@ -9,6 +9,20 @@ export const Buttons = ({children,variant,href,style}) =>
 
 }
 
+
+export const Links = styled.a`
+    color:black;
+    cursor:pointer;
+    font-size:${props=>props.theme.miscsizes.linksize};
+    font-family:${props=>props.theme.fonts.body};
+    font-weight:400;
+    text-decoration:none;
+    &:hover{
+        background:${props => props.variant==='clear' ? "white":"none" };
+        color:${props => props.theme.colors.purple};   
+    }
+`
+
 const StyledButton = styled.a`
     background:${props => props.variant==='clear' ? "none":"white" };
     color:${props => props.variant==='clear' ? "white": props.theme.colors.purple };

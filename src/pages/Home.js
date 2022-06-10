@@ -12,6 +12,7 @@ import {Accordion} from "../components/Accordion"
 import {Form} from "../components/ContactForm"
 
 import Bg from "../images/Group3166.png"
+import Bg2 from "../images/Group351.png"
 import PurpleUI from "../images/Group3933.png"
 import Logo from "../images/Frame.png"
 
@@ -54,7 +55,7 @@ function Home() {
         </Banner>
 
 
-        <Maindiv>
+        <Maindiv style={{marginTop:"50px"}}>
           <Accent>Topics</Accent>
           <MiddleWrap width="800px">
             <H2 variant="dark">Insights you can’t live without.</H2>
@@ -115,7 +116,7 @@ function Home() {
 
       <Divider/>
 
-
+    
       <Maindiv>
         <H2 variant="dark">Frequently Asked Questions</H2>
         <MiddleWrap width="800px">
@@ -175,7 +176,7 @@ function Home() {
           <H2 variant="dark">Unlock instant access to a whole new world of research.</H2>
           <P variant="dark">Sign up for Research for an up-close and in-depth look into <br/> the rapidly-evolving market.</P>
         </MiddleWrap>
-        <DivWithBackground backgroundimageurl={Bg} width="600px">
+        <DivWithBackground backgroundimageurl={Bg2} width="600px">
           <img src={Logo}/>
 
           <MiddleWrap width="800px">

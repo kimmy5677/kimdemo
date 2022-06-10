@@ -10,12 +10,12 @@ const StyledCard = styled.div`
     width:25%;
     @media ${props => props.theme.breakpoints.mobile} {
         width:100%;
-        padding:10px 10px 10px 10px;
+        padding:10px 20px 10px 20px;
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
         width:100%;
-        padding:10px 10px 10px 10px;
+        padding:10px 20px 10px 20px;
   }
 
 `
@@ -25,7 +25,7 @@ export const ReviewCard = ({name,review}) =>
     return(
         <StyledCard>
             <P align="left">{review}</P>
-            <Accent variant="atlpurple" size="big" align="left">{name}</Accent>       
+            <Accent variant="atlpurple" align="left" style={{fontSize:"16px"}}>{name}</Accent>       
         </StyledCard>
     )
 }

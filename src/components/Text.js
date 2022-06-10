@@ -35,7 +35,7 @@ export const P = ({children,variant,align,style}) =>
 export const Accent = ({children,align,variant,size}) =>
 {
     return(
-        <AccentStyled align={align} variant={variant} size={size}>{children}</AccentStyled>
+        <AccentStyled align={align} variant={variant} >{children}</AccentStyled>
     )
 }
 
@@ -158,12 +158,20 @@ const PStyled = styled.p`
   }
 `
 const AccentStyled = styled.p`
-font-size:${props => props.align==='big' ? props.theme.miscsizes.accent2 : props.theme.miscsizes.accent };
+font-size:${props => props.theme.miscsizes.accent };
 font-family:${props=>props.theme.fonts.body};
 font-weight:700;
 color:${props => props.align==='altpurple' ? props.theme.colors.purple2 : props.theme.colors.purple };
 line-height:18px;
 text-align:${props => props.align==='left' ? "left": "center" };
+@media ${props => props.theme.breakpoints.mobile} {
+        text-align:center;
+  }
+
+  @media ${props => props.theme.breakpoints.tablet} {
+        
+  }
+
 `
 
 

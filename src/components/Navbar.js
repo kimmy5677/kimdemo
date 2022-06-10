@@ -14,7 +14,7 @@ export const Navbar = (props) =>
     )
 }
 
-const NavbarContainer = styled.div`
+export const NavbarContainer = styled.div`
     width:100%;
     height:40px;
     display:flex;

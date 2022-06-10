@@ -5,9 +5,8 @@ const theme = {
     miscsizes:{
       nav:"14px",
       buttons:"14px",
-      buttons2:"16px",
       accent:"14px",
-      accent2:"16px"
+      linksize:"14px"
     },
     h1sizes:
     {

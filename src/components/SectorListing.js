@@ -1,4 +1,4 @@
-//Sector listing section. All sector listing elements 
+//Sector listing section. All sector listing elements including animation
 import styled from '@emotion/styled'
 export const SectorList = ({sectorslist,style,direction}) =>
 {
@@ -18,8 +18,8 @@ export const SectorList = ({sectorslist,style,direction}) =>
 }
 
 const StyledParagraph = styled.p`
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top:13px;
+    margin-bottom:13px;
     background:${props => props.theme.colors.black2 };
     color:white;
     border:1px solid white;
@@ -36,7 +36,7 @@ const StyledParagraph = styled.p`
 const StyledDiv = styled.div`
     display:flex;
     flex-direction:row;
-    gap:20px;
+    gap:26px;
 
     animation:  ${props => props.direction==="right" ? "rightmove 15s linear infinite" : "leftmove 15s linear infinite"};
 

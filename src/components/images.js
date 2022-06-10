@@ -3,7 +3,7 @@ export const LogoWrap = styled.div`
   display:flex;
   flex-wrap:wrap;
   flex-direction:row;
-  justify-content:space-around;
+  justify-content:space-evenly;
   gap:8px;
 `
 export const LogoImage = styled.img`
