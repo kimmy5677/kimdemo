@@ -4,15 +4,15 @@ body{
   margin: 0;
   padding: 0;
   width:100%;
+
  }
- 
 html,body{
   overflow-x:hidden;
 }
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: relative !important;
+  position: absolute;
   width: 30px;
   height: 30px;
   left: 50px;
@@ -37,16 +37,17 @@ html,body{
 
 
 .bm-menu-wrap {
-  position: absolute;
+  position: fixed;
   height: 100%;
   margin-top: -60px;
   margin-left: -90px;
+
 }
 
 /* General sidebar styles */
 .bm-menu {
   background:  #120B2B;
-  padding: 40px;
+  padding: 30px;
   overflow: hidden !important;
 }
 
