@@ -1,3 +1,4 @@
+//Footer component
 import {Links} from "../components/Buttons"
 import {Maindiv,RowWrap}  from "../components/Containers"
 import {P} from "../components/Text"

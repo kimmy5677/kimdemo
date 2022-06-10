@@ -1,11 +1,11 @@
-//All Burgr components
-
+//All BORGOR components. Stylings for borgor menu in index.css
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import {Links,NavEnd} from "../components/Navbar"
 import Logo from "../images/Frame.png"
 import styled from '@emotion/styled'
 
+//Burger menu
 export const Burger = ({props}) => {
   return (
     <Menu>
@@ -20,6 +20,7 @@ export const Burger = ({props}) => {
   );
 };
 
+//Container styling
 const BurgerContainer = styled.div`
     div{
     display:flex;

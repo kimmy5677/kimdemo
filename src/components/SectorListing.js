@@ -1,5 +1,8 @@
 //Sector listing section. All sector listing elements including animation
 import styled from '@emotion/styled'
+
+
+//Exports one row of sector listing. Accepts list of sectors and direction or movement (left or right)
 export const SectorList = ({sectorslist,style,direction}) =>
 {
 
@@ -17,6 +20,17 @@ export const SectorList = ({sectorslist,style,direction}) =>
 
 }
 
+
+//Entire scroller is wrapped in this. (Its on Home page)
+export const ScrollerDiv = styled.div`
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    overflow:hidden; 
+    white-space: nowrap;
+`
+
+//Styling for each individual sector
 const StyledParagraph = styled.p`
     margin-top:13px;
     margin-bottom:13px;
@@ -32,7 +46,7 @@ const StyledParagraph = styled.p`
     font-weight:600;
     font-size:${props=>props.theme.miscsizes.buttons};
 `
-
+//Responsible for animation
 const StyledDiv = styled.div`
     display:flex;
     flex-direction:row;
@@ -60,12 +74,3 @@ const StyledDiv = styled.div`
 
 `
 
-export const ScrollerDiv = styled.div`
-    position:absolute; 
-    top:0px; 
-    left:0px; 
-    overflow:hidden; 
-    white-space: nowrap;
-
-
-`

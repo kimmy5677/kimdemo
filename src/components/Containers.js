@@ -1,6 +1,7 @@
-//For all containers
+//For all containers and wrappers 
 import styled from '@emotion/styled'
 
+//Container where items are mid-aligned and uses COLUMN flex direction.
 export const MiddleWrap = ({children,width,align,style}) =>
 {
     return(
@@ -11,6 +12,7 @@ export const MiddleWrap = ({children,width,align,style}) =>
 
 }
 
+//Container where items are mid-aligned or left and uses ROW flex direction.
 export const RowWrap = ({children,width,align,style}) =>
 {
     return(
@@ -21,7 +23,7 @@ export const RowWrap = ({children,width,align,style}) =>
 
 }
 
-
+//Container styling for container with background image
 export const DivWithBackground = styled.div`
     margin:20px;
     padding-top:40px;
@@ -54,7 +56,31 @@ export const DivWithBackground = styled.div`
     } 
 `
 
+//Grey Divider
+export const Divider = styled.div`
+  height: 1.5px;
+  background-color: #e8eaed;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:100px;
+  margin-bottom:70px;
+  @media ${props => props.theme.breakpoints.mobile} {
+    margin-top:50px;
+  margin-bottom:30px;
+ 
+  }
 
+  @media ${props => props.theme.breakpoints.tablet} {
+    width:90%;
+    margin-top:50px;
+  margin-bottom:30px;
+
+  }
+
+`
+
+//Stylings
 const MiddleWrapStyled = styled.div`
     display:flex;
     flex-wrap:wrap;
@@ -127,25 +153,4 @@ export const Maindiv = styled.div`
 
   }
 `
-export const Divider = styled.div`
-  height: 1.5px;
-  background-color: #e8eaed;
-  width:90%;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:100px;
-  margin-bottom:70px;
-  @media ${props => props.theme.breakpoints.mobile} {
-    margin-top:30px;
-  margin-bottom:30px;
- 
-  }
 
-  @media ${props => props.theme.breakpoints.tablet} {
-    width:90%;
-    margin-top:30px;
-  margin-bottom:30px;
-
-  }
-
-`

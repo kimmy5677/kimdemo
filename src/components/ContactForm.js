@@ -1,9 +1,10 @@
+//All form components except button
 import { useState } from 'react';
 import {FormButton} from "../components/Buttons"
 import styled from '@emotion/styled'
 import {MiddleWrap} from "../components/Containers"
 
-
+//Form export. Currently doesn't send form anywhere upon submit
 export const Form = ({}) =>
 {
     const [toSend, setToSend] = useState({
@@ -54,20 +55,19 @@ export const Form = ({}) =>
             <StyledInput type="text" name="name" placeholder="Your name" value={toSend.name} onChange={handleChange} required/><br/>
             <StyledInput type="email" name="email" placeholder="Email address" value={toSend.email} onChange={handleChange} required/><br/>
             <StyledTextArea name="message" value={toSend.message} placeholder="Message" onChange={handleChange} required/>
-            <StyledLabel>{response.message}</StyledLabel><br/>
-            <FormButton type="submit">Talk to a Sales Rep</FormButton>           
+            <FormButton type="submit">Talk to a Sales Rep</FormButton>       
+            <StyledLabel>{response.message}</StyledLabel><br/>    
        </MiddleWrap>
        </StyledForm>        
     );
 }
 
 
-
+//Form stylings including label and input fields
 export const StyledForm = styled.form`
   margin-bottom: 30px;
   width:90%;
 `
-
 
 export const StyledLabel = styled.label`
     font-size: 13px;
@@ -76,16 +76,17 @@ export const StyledLabel = styled.label`
     text-transform:uppercase;
     color: black;
     margin-bottom: 10px;
+
 `
 
 export const StyledInput = styled.input`
     font-size: ${props=>props.theme.psizes.desktop};
     font-family: ${props=>props.theme.fonts.body};
     color: #757575;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border-radius: 10px;
     height:40px;
-    width:100%;
+    width:95%;
     border: 1px solid #CCCCCC;
     padding: 8px 18px 8px 18px;
 
@@ -106,10 +107,10 @@ export const StyledTextArea = styled.textarea`
     border-radius: 10px;
     height:70px;
     margin-bottom:15px;
-    width:100%;
+    width:95%;
     border: 1px solid #CCCCCC;
     padding: 8px 18px 8px 18px;
-
+    margin-bottom:20px;
     
     @media ${props => props.theme.breakpoints.mobile} {
         width:100%;

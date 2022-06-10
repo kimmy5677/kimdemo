@@ -10,6 +10,7 @@ import Minus from "../images/minus-circle.svg"
 import Plus from "../images/plus-circle.svg"
 
 
+//Accordion. Accepts object contaning FAQs. Returns full list of FAQs
 export const Accordion = ({listitems}) =>
 {
     const itemList = listitems.map(({title,answer}) => {
@@ -19,9 +20,7 @@ export const Accordion = ({listitems}) =>
         )
 
     }
-
     );
-
 
     return(
         <div style={{width:"100%",marginTop:"40px"}}>
@@ -32,7 +31,7 @@ export const Accordion = ({listitems}) =>
 
 }
 
-
+//A single accordion item. Accepts FAQ title and answer and return a single accordion item
 const AccordionSingle = ({title,answer}) =>
 {
     const [isActive, setIsActive] = useState(false);
@@ -46,17 +45,17 @@ const AccordionSingle = ({title,answer}) =>
             {isActive ?  <P style={{textAlign:'left'}} align="left">{answer}</P> : ""  }
         </AccordionContent>   
     </AccordionItem>
-
     )
-
 }
+
+//Stylings for accordion components 
 
 const AccordionItem = styled.div`
     border: 1px solid #e3e5e8;
     border-radius:10px;
     width:100%;
     padding: 0px 20px 20px 20px;
-    margin-top:20px;
+    margin-top:5px;
     margin-bottom:20px;
     @media ${props => props.theme.breakpoints.mobile} {
     width:90%;

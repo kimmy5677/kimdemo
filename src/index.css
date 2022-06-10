@@ -4,8 +4,8 @@ body{
   margin: 0;
   padding: 0;
   width:100%;
-
  }
+ 
 html,body{
   overflow-x:hidden;
 }
@@ -13,7 +13,7 @@ html,body{
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: absolute;
-  width: 36px;
+  width: 30px;
   height: 30px;
   left: 50px;
   top: 50px;
@@ -35,22 +35,18 @@ html,body{
   background: #bdc3c7;
 }
 
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
+
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
   margin-top: -60px;
-  margin-left: -100px;
-
+  margin-left: -90px;
 }
 
 /* General sidebar styles */
 .bm-menu {
   background:  #120B2B;
-  padding: 30px;
+  padding: 40px;
   overflow: hidden !important;
 }
 

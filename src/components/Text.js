@@ -1,9 +1,9 @@
-//All text components. Heading 1,2,3 also paragraph,accent andd listing text
+//All text components. Heading 1,2,3 also paragraph,accent and listing text
 import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons'
 
-
+//H1 Component. "Dark variant is black text, light is white text"
 export const H1 = ({children,variant,style}) =>
 {
     return(
@@ -11,6 +11,7 @@ export const H1 = ({children,variant,style}) =>
     )
 }
 
+//H2 Component.
 export const H2 = ({children,variant,align,style}) =>
 {
     return(
@@ -18,13 +19,15 @@ export const H2 = ({children,variant,align,style}) =>
     )
 }
 
-export const H3 = ({children,variant,size,style}) =>
+//H3 Component.
+export const H3 = ({children,variant,style}) =>
 {
     return(
-        <H3Styled variant={variant} style={style} size={size}>{children}</H3Styled>
+        <H3Styled variant={variant} style={style}>{children}</H3Styled>
     )
 }
 
+//Paragraph text Component.
 export const P = ({children,variant,align,style}) =>
 {
     return(
@@ -32,13 +35,16 @@ export const P = ({children,variant,align,style}) =>
     )
 }
 
-export const Accent = ({children,align,variant,size}) =>
+//Accent text Component. like "Topics", "What You Get"
+export const Accent = ({children,align,variant}) =>
 {
     return(
         <AccentStyled align={align} variant={variant} >{children}</AccentStyled>
     )
 }
 
+//List items with checkmark. "Light variant" is white checkmark + white text. Otherwise/Defaut is purple checkmark and black text
+//Accepts an array of items 
 export const ListItem = ({listitems,variant}) =>
 {
     const listItems = listitems.map((item) => {
@@ -74,7 +80,7 @@ export const ListItem = ({listitems,variant}) =>
 }
 
 
-
+//Stylings 
 const H1Styled = styled.h1`
     font-size:${props => props.theme.h1sizes.desktop};
     font-family:${props=>props.theme.fonts.body};
