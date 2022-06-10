@@ -32,7 +32,7 @@ export const Banner = ({backgroundimageurl,children}) =>
 //Stylings for Banner
 
 const StyledBanner = styled.div`
-    margin:20px;
+    margin: 20px 20px 0px 20px;
     padding:40px;
     border-radius:10px;
     min-height:800px;
@@ -47,11 +47,12 @@ const StyledBanner = styled.div`
     align-content:center;
     box-shadow: 3px 3px 20px #888888cc;
     @media ${props => props.theme.breakpoints.mobile} {
-        min-height:500px;
+        min-height:550px;
+        padding-top:80px;
     }
 
   @media ${props => props.theme.breakpoints.tablet} {
-        min-height:500px;
+        min-height:550px;
     }
 
 `
