@@ -77,11 +77,11 @@ const AccordionTitle = styled.div`
 const AccordionContent = styled.div`
     width:80%;
     @media ${props => props.theme.breakpoints.mobile} {
-    width:100%;
+    width:90%;
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
-    width:100%;
+    width:90%;
 
   }
 `
