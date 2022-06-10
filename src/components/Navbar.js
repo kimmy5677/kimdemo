@@ -22,6 +22,7 @@ export const NavbarContainer = styled.div`
     display:flex;
     flex-wrap:wrap;
     align-items:center;
+    box-sizing: border-box;
     padding:10px;
     justify-content:space-between;
 `

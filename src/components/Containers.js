@@ -42,17 +42,19 @@ export const DivWithBackground = styled.div`
     justify-content:flex-start;
     align-content:center;
     align-items:center;
-
+    box-sizing: border-box;
     @media ${props => props.theme.breakpoints.mobile} {
-    width:90%;
+    width:100%;
     align-items:center; 
-    padding-right:0px;
+    padding-right:10px;
+    padding-left:10px;
     }
 
     @media ${props => props.theme.breakpoints.tablet} {
-    width:90%;
+    width:100%;
     align-items:center; 
-    padding-right:0px;
+    padding-right:10px;
+    padding-left:10px;
     } 
 `
 
@@ -137,7 +139,8 @@ export const Maindiv = styled.div`
     margin-right:auto;
     margin-left:auto;
     padding-top:50px;
-    width:90%;
+    width:100%;
+    box-sizing: border-box;
     align-content:center;
     @media ${props => props.theme.breakpoints.mobile} {
     width:90%;

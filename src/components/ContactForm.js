@@ -66,7 +66,8 @@ export const Form = ({}) =>
 //Form stylings including label and input fields
 export const StyledForm = styled.form`
   margin-bottom: 30px;
-  width:90%;
+  width:100%;
+  box-sizing: border-box;
 `
 
 export const StyledLabel = styled.label`
@@ -86,18 +87,10 @@ export const StyledInput = styled.input`
     margin-bottom: 5px;
     border-radius: 10px;
     height:40px;
-    width:95%;
+    width:100%;
+    box-sizing: border-box;
     border: 1px solid #CCCCCC;
     padding: 8px 18px 8px 18px;
-
-    @media ${props => props.theme.breakpoints.mobile} {
-    width:100%;
-  }
-
-  @media ${props => props.theme.breakpoints.tablet} {
-    width:100%;
-  }
-
 `
 
 export const StyledTextArea = styled.textarea`
@@ -107,16 +100,9 @@ export const StyledTextArea = styled.textarea`
     border-radius: 10px;
     height:70px;
     margin-bottom:15px;
-    width:95%;
+    width:100%;
+    box-sizing: border-box;
     border: 1px solid #CCCCCC;
     padding: 8px 18px 8px 18px;
     margin-bottom:20px;
-    
-    @media ${props => props.theme.breakpoints.mobile} {
-        width:100%;
-  }
-
-  @media ${props => props.theme.breakpoints.tablet} {
-    width:100%;
-  }
 `

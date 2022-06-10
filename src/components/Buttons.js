@@ -51,6 +51,7 @@ export const FormButton = styled.button`
     min-width:150px;
     text-align:center;
     width:100%;
+    box-sizing: border-box;
     cursor:pointer;
     border-radius:5px;
     font-family:${props=>props.theme.fonts.body};

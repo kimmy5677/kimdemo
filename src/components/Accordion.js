@@ -53,14 +53,15 @@ const AccordionItem = styled.div`
     border-radius:10px;
     width:100%;
     padding: 0px 20px 20px 20px;
+    box-sizing: border-box;
     margin-top:5px;
     margin-bottom:20px;
     @media ${props => props.theme.breakpoints.mobile} {
-    width:90%;
+    width:100%;
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
-    width:90%;
+    width:100%;
 
   }
 `
