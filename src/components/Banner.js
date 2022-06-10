@@ -1,6 +1,7 @@
 //Contains all Banner components 
 import styled from '@emotion/styled'
 import {Navbar} from "../components/Navbar"
+import {Burger} from "../components/BurgerMenu"
 import React, { useState, useEffect } from 'react';
 
 //Accepts banner background image and image. Adds menu as well
@@ -20,7 +21,8 @@ export const Banner = ({backgroundimageurl,children}) =>
         <div>
         <StyledBanner backgroundimageurl={backgroundimageurl}>
 
-     
+            {isMobileSize && (<Burger/>)}
+            {!isMobileSize && (<Navbar/>)}       
             {children}
         </StyledBanner>
         </div>

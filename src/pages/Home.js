@@ -55,7 +55,7 @@ function Home() {
         </Banner>
 
 
-        <Maindiv style={{marginTop:"50px"}}>
+        <Maindiv style={{marginTop:"40px"}}>
           <Accent>Topics</Accent>
           <MiddleWrap width="800px">
             <H2 variant="dark">Insights you can’t live without.</H2>
