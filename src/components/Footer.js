@@ -9,7 +9,7 @@ export const Footer = () =>
     return(
         <Maindiv width="90%" style={{marginTop:"40px"}}>
             <NavbarContainer>
-            <RowWrap style={{gap:"10px"}}>
+            <RowWrap style={{gap:"20px"}}>
                 <Links href="/">About</Links>
                 <Links href="/">Privacy Policy</Links>
                 <Links href="/">Terms of Use</Links>
