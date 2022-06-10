@@ -60,7 +60,7 @@ export const NavEnd = () =>
     return(
         <div>
         <NavLink href="/">Login</NavLink>
-        <Buttons type="clear">Get Access</Buttons>
+        <Buttons variant="clear">Get Access</Buttons>
         </div>
     )
 }

@@ -28,7 +28,7 @@ export const DivWithBackground = styled.div`
     padding-bottom:40px;
 
     border-radius:10px;
-
+    box-shadow: 2px 2px 20px #888888cc;
     background-size:cover !important;
     background-position:center;
     background-repeat:no-repeat;
@@ -40,6 +40,7 @@ export const DivWithBackground = styled.div`
     justify-content:flex-start;
     align-content:center;
     align-items:center;
+
     @media ${props => props.theme.breakpoints.mobile} {
     width:90%;
     align-items:center; 

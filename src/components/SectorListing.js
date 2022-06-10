@@ -1,9 +1,5 @@
 //Sector listing section. All sector listing elements 
 import styled from '@emotion/styled'
-
-
-
-
 export const SectorList = ({sectorslist,style,direction}) =>
 {
 

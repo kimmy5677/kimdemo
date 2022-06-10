@@ -5,7 +5,7 @@ import {Banner} from "../components/Banner"
 
 import {Buttons} from "../components/Buttons"
 import {SectorList,ScrollerDiv} from "../components/SectorListing"
-import {Image} from "../components/images"
+import {Image,LogoWrap,LogoImage } from "../components/images"
 import {ReviewCard} from "../components/ReviewCard"
 import {H1,H2,H3,P,Accent,ListItem} from "../components/Text"
 import {Accordion} from "../components/Accordion"
@@ -15,6 +15,14 @@ import Bg from "../images/Group3166.png"
 import PurpleUI from "../images/Group3933.png"
 import Logo from "../images/Frame.png"
 
+import Bitwise from "../images/bitwise.svg"
+import Bridgewater from "../images/bridgewater.svg"
+import Coinbase from "../images/Coinbase.svg"
+import Morgan from "../images/morgan.svg"
+import Multi from "../images/multi.svg"
+import OpenSea from "../images/opensea.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
   return (
@@ -25,12 +33,24 @@ function Home() {
             <H1 variant="light">Get unlimited access to the <br/> most powerful platform.</H1>
             <P variant="light" style={{paddingTop:"10px",paddingBottom:"10px",}}>Research, data, governance, tokenomics, and models. Now, all in one place.</P>
             <RowWrap style={{paddingTop:"20px"}}>
-              <Buttons type="white" style={{margin:"10px"}} >Explore the Product</Buttons>
-              <Buttons type="clear"  style={{margin:"10px"}}>Get in Touch</Buttons>
+              <Buttons variant="white" style={{margin:"10px"}} >Explore the Product</Buttons>
+              <Buttons variant="clear"  style={{margin:"10px"}}>Get in Touch</Buttons>
             </RowWrap>
           </MiddleWrap>
-          <div>
-          </div>
+          <LogoWrap>
+
+            <LogoWrap>
+              <P variant="light" align="left" style={{fontSize:"14px",margin:"-5px 0px 0px 10px",opacity:"70%"}}>Research is trusted by industry leaders</P>  
+              <FontAwesomeIcon icon={faArrowRight} style={{color:'white',opacity:'70%',marginTop:'2px'}}/>
+            </LogoWrap>
+
+            <LogoImage  src={Coinbase}/>
+            <LogoImage  src={Morgan}/>
+            <LogoImage  src={Multi}/>
+            <LogoImage  src={Bitwise}/>
+            <LogoImage  src={Bridgewater}/>
+            <LogoImage  src={OpenSea}/>
+          </LogoWrap>
         </Banner>
 
 
@@ -172,7 +192,7 @@ function Home() {
             <ListItem variant="light" listitems={["Daily Morning Briefing","Private Discord","Discounted Events","Asset Profiles","Research Portal","Fund Overviews "]}/>
             <ListItem variant="light" listitems={["Monthly Analyst Calls","Corporate Access Calls","DAO Commissioned Research","Directory","Raw Data Feed "]} />
           </RowWrap>
-          <Buttons type="white" style={{margin:"40px 10px 10px 10px", fontSize:"16px", width:"40%"}} >Subscribe</Buttons>
+          <Buttons variant="white" style={{margin:"40px 10px 10px 10px", fontSize:"16px", width:"40%"}} >Subscribe</Buttons>
        </DivWithBackground>
       </Maindiv>
 

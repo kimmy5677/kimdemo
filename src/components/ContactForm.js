@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Buttons} from "../components/Buttons"
+import {FormButton} from "../components/Buttons"
 import styled from '@emotion/styled'
 import {MiddleWrap} from "../components/Containers"
 
@@ -18,9 +18,31 @@ export const Form = ({}) =>
     
       const onSubmit = (e) => {
         e.preventDefault();
-        
+
+        console.log("hiiii")
+
+        if(toSend.name==="" || toSend.email==="" || toSend.message==="")
+        {
+          setResponse({message:'Please fill out all fields!'})
+        }
+        else 
+        {
+          if(toSend.email.includes('@'))
+          {
+            setResponse({message:'Sent!'})
+            setToSend({
+                name:'',
+                email:'',
+                message:''
+              })
+          }
+          else
+          {
+            setResponse({message:'Please enter a valid email address'})
+          }
+        }
       };
-    
+
       const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
       };
@@ -33,7 +55,7 @@ export const Form = ({}) =>
             <StyledInput type="email" name="email" placeholder="Email address" value={toSend.email} onChange={handleChange} required/><br/>
             <StyledTextArea name="message" value={toSend.message} placeholder="Message" onChange={handleChange} required/>
             <StyledLabel>{response.message}</StyledLabel><br/>
-            <Buttons type ="submit" style = {{backgroundColor:"#5538CD",color:"white",width:"95%"}} >Talk to a Sales Rep</Buttons>           
+            <FormButton type="submit">Talk to a Sales Rep</FormButton>           
        </MiddleWrap>
        </StyledForm>        
     );

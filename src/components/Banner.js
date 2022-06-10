@@ -42,7 +42,7 @@ const StyledBanner = styled.div`
     justify-content:space-between;
     flex-wrap:wrap;
     align-content:center;
-    box-shadow: 4px 4px 10px #888888;
+    box-shadow: 3px 3px 20px #888888cc;
     @media ${props => props.theme.breakpoints.mobile} {
         min-height:500px;
     }

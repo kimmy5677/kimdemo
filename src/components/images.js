@@ -1,6 +1,17 @@
 import styled from '@emotion/styled'
-export const Image = styled.img`
+export const LogoWrap = styled.div`
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:8px;
+`
+export const LogoImage = styled.img`
+  height:15px;
+  width:auto;
+`
 
+export const Image = styled.img`
    z-index: 100;
    margin-left: auto;
    margin-right: auto;

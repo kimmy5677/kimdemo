@@ -56,7 +56,7 @@ const AccordionItem = styled.div`
     border: 1px solid #e3e5e8;
     border-radius:10px;
     width:100%;
-    padding: 5px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
     margin-top:20px;
     margin-bottom:20px;
     @media ${props => props.theme.breakpoints.mobile} {
