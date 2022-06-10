@@ -12,7 +12,7 @@ html,body{
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: absolute;
+  position: absolute !important;
   width: 30px;
   height: 30px;
   left: 50px;
