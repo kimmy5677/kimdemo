@@ -1,10 +1,8 @@
 //All Accordion Components.
 
 import styled from '@emotion/styled'
-import {H1,H2,H3,P,Accent,ListItem} from "../components/Text"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMinus } from '@fortawesome/free-solid-svg-icons'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import {H3,P} from "../components/Text"
+
 import React, { useState } from 'react';
 import Minus from "../images/minus-circle.svg"
 import Plus from "../images/plus-circle.svg"
